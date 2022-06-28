@@ -401,7 +401,7 @@ class Subject(dict):
         plot_subject(self, **kwargs)
 
 
-def _subject_copy_helper(old_obj: Subject, new_subj_cls: Callable[[dict[str, Any]], Subject]):
+def _subject_copy_helper(old_obj: Subject, new_subj_cls: Callable[[Dict[str, Any]], Subject]):
     result_dict = {}
     for key, value in old_obj.items():
         if isinstance(value, Image):
