@@ -1,7 +1,7 @@
 import urllib.parse
 from ...utils import get_torchio_cache_dir
 from ...data.subject import _RawSubjectCopySubject
-from ...data import Subject, ScalarImage, LabelMap
+from ...data import ScalarImage, LabelMap
 from ...download import download_and_extract_archive
 
 

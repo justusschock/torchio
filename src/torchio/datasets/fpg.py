@@ -1,5 +1,5 @@
 import urllib.parse
-from ...data.subject import _RawSubjectCopySubject
+from ..data.subject import _RawSubjectCopySubject
 from .. import ScalarImage, LabelMap, DATA_REPO
 from ..data.io import read_matrix
 from ..download import download_url
