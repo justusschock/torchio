@@ -417,5 +417,3 @@ def _subject_copy_helper(old_obj: Subject, new_subj_cls: Callable[[dict[str, Any
 class _RawSubjectCopySubject(Subject):
     def __copy__(self):
         return _subject_copy_helper(self, Subject)
-
-
