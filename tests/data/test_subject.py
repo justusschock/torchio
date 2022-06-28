@@ -109,7 +109,7 @@ class TestSubject(TorchioTestCase):
             tio.Subject(0)
 
     def test_no_images(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             tio.Subject(a=0)
 
     def test_copy_subject(self):
