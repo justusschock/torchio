@@ -1,11 +1,12 @@
 import urllib.parse
-from .. import Subject, ScalarImage, LabelMap, DATA_REPO
+from ...data.subject import _RawSubjectCopySubject
+from .. import ScalarImage, LabelMap, DATA_REPO
 from ..data.io import read_matrix
 from ..download import download_url
 from ..utils import get_torchio_cache_dir
 
 
-class FPG(Subject):
+class FPG(_RawSubjectCopySubject):
     """3T :math:`T_1`-weighted brain MRI and corresponding parcellation.
 
     Args:
