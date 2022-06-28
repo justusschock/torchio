@@ -418,4 +418,4 @@ class _RawSubjectCopySubject(Subject):
     def __copy__(self):
         return _subject_copy_helper(self, Subject)
 
-    
+
